@@ -146,7 +146,7 @@ def recover_with_filtered_distance_by_threshold(A_input, cluster_count, predicte
     reference_nodes_lists = []
     for k in range(cluster_count):
         target_label = k + 1
-        indices = np.where((predicted_labels == target_label) & (degrees > degree_threshold))[0]
+        indices = np.where((predicted_labels == target_label) & (degrees >= degree_threshold))[0]
         if len(indices) > 0:
             reference_nodes_lists.append(indices.tolist())
         else:
@@ -1736,13 +1736,10 @@ def Leaf_stripping_postCT(gibbs_results, components):
         for node, comp_idx in enumerate(sample['assignments']):
             if node >= n:  # Skip if node index is out of bounds
                 continue
-                
+
             if comp_idx < K:  # Only count valid components
-                # Find which root's component this assignment belongs to
-                for root, root_comp in zip(sample_roots, root_components):
-                    if comp_idx == root_comp:
-                        assignment_counts[node, comp_idx] += 1
-                        break
+                anchor_comp = root_components[comp_idx]
+                assignment_counts[node, anchor_comp] += 1
     
     # Compute probabilities
     total_samples = valid_samples if valid_samples > 0 else 1

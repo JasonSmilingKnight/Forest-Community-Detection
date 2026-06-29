@@ -332,11 +332,7 @@ def compute_misclassification_metrics(new_labels, n_per_component, total_nodes, 
             component_start = k * n_per_component
             component_end = component_start + n_per_component
             component_nodes = list(range(component_start, component_end))
-            component_nodes_sorted = sorted(
-                component_nodes,
-                key=lambda i: node_depth.get(i, float('inf'))
-            )
-            first_L_indices.extend(component_nodes_sorted[:min(L, len(component_nodes_sorted))])
+            first_L_indices.extend(component_nodes[:min(L, len(component_nodes))])
         metrics[f"first_{L}"] = best_error_for_subset(first_L_indices)
 
     classified = np.where(new_labels != 0)[0]

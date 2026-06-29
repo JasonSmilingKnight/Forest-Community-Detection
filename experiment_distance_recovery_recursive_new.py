@@ -349,34 +349,21 @@ def compute_misclassification_metrics(
                 best_err = err
         return best_err
 
-    # First-arriving (shallowest depth) metrics
+    # First-arriving metrics (node index = arrival order by construction)
     for L in L_list:
         first_L_indices = []
         for k in range(K):
             component_start = k * n_per_component
             component_end = component_start + n_per_component
             component_nodes = list(range(component_start, component_end))
-            component_nodes_sorted = sorted(
-                component_nodes,
-                key=lambda i: node_depth.get(i, float('inf'))
-            )
-            first_L_indices.extend(component_nodes_sorted[:min(L, len(component_nodes_sorted))])
+            first_L_indices.extend(component_nodes[:min(L, len(component_nodes))])
         metrics[f"first_{L}"] = best_error_for_subset(first_L_indices)
 
-    # Highest-degree metrics
+    # Highest-degree metrics (top-L by degree across the whole network)
     if initial_degrees is not None:
         for L in L_list:
-            highdeg_L_indices = []
-            for k in range(K):
-                component_start = k * n_per_component
-                component_end = component_start + n_per_component
-                component_nodes = list(range(component_start, component_end))
-                component_nodes_sorted = sorted(
-                    component_nodes,
-                    key=lambda i: initial_degrees.get(i, 0),
-                    reverse=True
-                )
-                highdeg_L_indices.extend(component_nodes_sorted[:min(L, len(component_nodes_sorted))])
+            all_nodes = list(range(total_nodes))
+            highdeg_L_indices = sorted(all_nodes, key=lambda i: initial_degrees.get(i, 0), reverse=True)[:L]
             metrics[f"highdeg_{L}"] = best_error_for_subset(highdeg_L_indices)
 
     # Overall classified
