@@ -6,7 +6,6 @@ import json
 from pathlib import Path
 import re
 import shutil
-import subprocess
 import sys
 
 import matplotlib
@@ -96,40 +95,22 @@ def rebuild(output, supplied=None):
             label = 'tab:mean_error_scale_' + short + (' 3' if scenario == 'unbalanced' else '')
             snapshot = ROOT / f'results/paper/tables/{scenario}_{rate}.tex'
             (tables / snapshot.name).write_text(rewrite_table(snapshot.read_text(encoding='utf-8'), label, means), encoding='utf-8')
-            for manuscript in ('main_jmlr.tex',):
-                path = ROOT / 'manuscript' / manuscript
-                path.write_text(rewrite_table(path.read_text(encoding='utf-8'), label, means), encoding='utf-8')
     for metric in lines.METRICS_TO_PLOT:
         lines.plot_combined_mean(lines.load_method_means(str(staged), metric), metric, str(figures))
     means = weights.load_means(staged, 1)
     for group in weights.WEIGHT_GROUPS:
         weights.plot_weights(means, group, figures, 1)
-    for path in figures.glob('*.pdf'):
-        shutil.copy2(path, ROOT / 'manuscript/numerical_output' / path.name)
     (output / 'input_manifest.json').write_text(json.dumps(provenance, indent=2) + '\n', encoding='utf-8')
     print(f'Wrote {len(list(figures.glob("*.pdf")))} figures and six tables to {output}')
     print('Input sources are identified in input_manifest.json.')
-
-
-def compile_manuscript():
-    directory = ROOT / 'manuscript'
-    for name in ('main_jmlr',):
-        command = ['pdflatex', '-interaction=nonstopmode', '-halt-on-error', name + '.tex']
-        subprocess.run(command, cwd=directory, check=True)
-        subprocess.run(['bibtex', name], cwd=directory, check=True)
-        subprocess.run(command, cwd=directory, check=True)
-        subprocess.run(command, cwd=directory, check=True)
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, default=ROOT / 'results/reproduced')
     parser.add_argument('--data-dir', type=Path, help='Prefer finalized new simulation CSVs in this folder')
-    parser.add_argument('--compile', action='store_true', help='Compile the JMLR manuscript using LaTeX/BibTeX')
     args = parser.parse_args()
     rebuild(args.output.resolve(), args.data_dir.resolve() if args.data_dir else None)
-    if args.compile:
-        compile_manuscript()
 
 
 if __name__ == '__main__':
