@@ -2,6 +2,8 @@
 
 Code, data, and selected results for the [paper](https://arxiv.org/abs/2606.07447) by Jianxiang Wang and Min Xu.
 
+The code was prepared for an earlier tailored version of the manuscript and includes some experiments that are not reported in the main paper.
+
 ## Setup
 
 Use Python 3.11 or later. Run from the repository root:
