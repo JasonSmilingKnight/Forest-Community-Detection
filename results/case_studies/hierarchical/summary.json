@@ -1,0 +1,248 @@
+{
+  "nodes": 2263,
+  "edges": 4388,
+  "pruning_q": 25,
+  "implementation": "historical",
+  "rank": 10,
+  "effective_rank": 10,
+  "pruning_argument_b": 5,
+  "minimum_child_core": 10,
+  "rounds": 9,
+  "communities": 23,
+  "unclassified": 820,
+  "split_history": [
+    [
+      "root",
+      1,
+      2
+    ],
+    [
+      1,
+      3,
+      4
+    ],
+    [
+      3,
+      5,
+      6
+    ],
+    [
+      4,
+      7,
+      8
+    ],
+    [
+      5,
+      9,
+      10
+    ],
+    [
+      6,
+      11,
+      12
+    ],
+    [
+      9,
+      13,
+      14
+    ],
+    [
+      10,
+      15,
+      16
+    ],
+    [
+      11,
+      17,
+      18
+    ],
+    [
+      12,
+      19,
+      20
+    ],
+    [
+      13,
+      21,
+      22
+    ],
+    [
+      14,
+      23,
+      24
+    ],
+    [
+      15,
+      25,
+      26
+    ],
+    [
+      21,
+      27,
+      28
+    ],
+    [
+      23,
+      29,
+      30
+    ],
+    [
+      24,
+      31,
+      32
+    ],
+    [
+      25,
+      33,
+      34
+    ],
+    [
+      26,
+      35,
+      36
+    ],
+    [
+      27,
+      37,
+      38
+    ],
+    [
+      31,
+      39,
+      40
+    ],
+    [
+      37,
+      41,
+      42
+    ],
+    [
+      39,
+      43,
+      44
+    ]
+  ],
+  "coverage": {
+    "9": {
+      "assigned": 14,
+      "displayed": 14
+    },
+    "22": {
+      "assigned": 17,
+      "displayed": 15
+    },
+    "13": {
+      "assigned": 31,
+      "displayed": 31
+    },
+    "10": {
+      "assigned": 33,
+      "displayed": 33
+    },
+    "17": {
+      "assigned": 35,
+      "displayed": 24
+    },
+    "6": {
+      "assigned": 37,
+      "displayed": 33
+    },
+    "18": {
+      "assigned": 43,
+      "displayed": 39
+    },
+    "15": {
+      "assigned": 53,
+      "displayed": 21
+    },
+    "19": {
+      "assigned": 55,
+      "displayed": 20
+    },
+    "12": {
+      "assigned": 57,
+      "displayed": 56
+    },
+    "2": {
+      "assigned": 59,
+      "displayed": 55
+    },
+    "8": {
+      "assigned": 66,
+      "displayed": 56
+    },
+    "21": {
+      "assigned": 72,
+      "displayed": 47
+    },
+    "5": {
+      "assigned": 73,
+      "displayed": 56
+    },
+    "16": {
+      "assigned": 73,
+      "displayed": 61
+    },
+    "3": {
+      "assigned": 75,
+      "displayed": 72
+    },
+    "14": {
+      "assigned": 77,
+      "displayed": 69
+    },
+    "23": {
+      "assigned": 79,
+      "displayed": 77
+    },
+    "4": {
+      "assigned": 82,
+      "displayed": 82
+    },
+    "11": {
+      "assigned": 94,
+      "displayed": 94
+    },
+    "20": {
+      "assigned": 97,
+      "displayed": 79
+    },
+    "1": {
+      "assigned": 105,
+      "displayed": 103
+    },
+    "7": {
+      "assigned": 116,
+      "displayed": 105
+    }
+  },
+  "outputs": [
+    "assignments.csv",
+    "community_tree.pdf",
+    "final_dist_cluster_1.pdf",
+    "final_dist_cluster_10.pdf",
+    "final_dist_cluster_11.pdf",
+    "final_dist_cluster_12.pdf",
+    "final_dist_cluster_13.pdf",
+    "final_dist_cluster_14.pdf",
+    "final_dist_cluster_15.pdf",
+    "final_dist_cluster_16.pdf",
+    "final_dist_cluster_17.pdf",
+    "final_dist_cluster_18.pdf",
+    "final_dist_cluster_19.pdf",
+    "final_dist_cluster_2.pdf",
+    "final_dist_cluster_20.pdf",
+    "final_dist_cluster_21.pdf",
+    "final_dist_cluster_22.pdf",
+    "final_dist_cluster_23.pdf",
+    "final_dist_cluster_3.pdf",
+    "final_dist_cluster_4.pdf",
+    "final_dist_cluster_5.pdf",
+    "final_dist_cluster_6.pdf",
+    "final_dist_cluster_7.pdf",
+    "final_dist_cluster_8.pdf",
+    "final_dist_cluster_9.pdf",
+    "final_dist_full_graph.pdf",
+    "layout.csv"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "nodes": 2263,
+  "edges": 4388,
+  "dunson_brown_distance": 5,
+  "neighborhood_nodes": 138,
+  "outputs": [
+    "degree_distribution.pdf",
+    "dunson_brown_neighbourhood.pdf",
+    "tmp_stats.pdf",
+    "vertices.csv"
+  ]
+}

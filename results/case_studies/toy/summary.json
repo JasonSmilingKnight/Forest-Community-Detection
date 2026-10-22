@@ -1,0 +1,78 @@
+{
+  "nodes": 23,
+  "edges": 30,
+  "samples": 500,
+  "valid_samples": 201,
+  "illustrated_anchors": [
+    [
+      0,
+      1,
+      5
+    ],
+    [
+      12,
+      13,
+      17,
+      21
+    ]
+  ],
+  "simple_anchors": [
+    [
+      0,
+      5
+    ],
+    [
+      12
+    ]
+  ],
+  "pruning_trace": [
+    {
+      "Q": 3,
+      "degree": 2.0,
+      "removed": [
+        2,
+        4,
+        6,
+        7,
+        9,
+        10,
+        11,
+        15,
+        16,
+        18,
+        20
+      ]
+    },
+    {
+      "Q": 3,
+      "degree": 3.0,
+      "removed": [
+        3,
+        14,
+        19
+      ]
+    }
+  ],
+  "outputs": [
+    "assignments.csv",
+    "figure1_original_graph.pdf",
+    "figure2_algorithm_colored_result.pdf",
+    "figure3_recovered_communities.pdf",
+    "figure4_remaining_nodes.pdf",
+    "figure5_manual_coloring.pdf",
+    "hard_classification.pdf",
+    "soft_classification.pdf"
+  ],
+  "sampler": "Original fixed-K attachment weights",
+  "seed_mode": "two_node",
+  "alpha": 0,
+  "beta": 1,
+  "burn": 30,
+  "np_seed": 7000,
+  "python_seed": 7000,
+  "planted_accuracy": 1.0,
+  "previous_planted_accuracy": 0.9565217391304348,
+  "changed_hard_label_nodes": [
+    19
+  ]
+}

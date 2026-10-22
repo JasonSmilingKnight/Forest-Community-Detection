@@ -1,0 +1,53 @@
+\begin{table}[tbp]
+\setlength{\tabcolsep}{3.5pt}
+
+\centering
+
+{
+\begin{tabular}{c|c|cc|cc|ccc|c}
+\hline
+\hline
+\multirow{3}{*}{$\alpha$} & \multirow{3}{*}{n}
+& \multicolumn{8}{c}{Misclassification Rate for Different Subsets} \\
+\cline{3-10}
+& 
+& \multicolumn{2}{c|}{First Arriving}
+& \multicolumn{2}{c|}{Highest Degree}
+& \multicolumn{3}{c|}{Structural Position}
+& \multirow{2}{*}{Overall} \\
+\cline{3-9}
+& 
+& $L=10$ & $L=50$
+& $L=10$ & $L=50$
+& Root (Layer 0) & Layer 1 & Layer 2
+& \\
+\hline
+\multirow{5}{*}{2}
+& 1000 & 0.29 & 0.38 & 0.29 & 0.40 & 0.18 & 0.25 & 0.35 & 0.46 \\
+& 2000 & 0.28 & 0.37 & 0.27 & 0.38 & 0.19 & 0.25 & 0.35 & 0.47 \\
+& 3000 & 0.25 & 0.36 & 0.28 & 0.38 & 0.18 & 0.24 & 0.34 & 0.47 \\
+& 4000 & 0.23 & 0.33 & 0.26 & 0.37 & 0.15 & 0.22 & 0.33 & 0.47 \\
+& 5000 & 0.23 & 0.34 & 0.24 & 0.37 & 0.14 & 0.21 & 0.33 & 0.48 \\
+\hline
+\multirow{5}{*}{0}
+& 1000 & 0.15 & 0.26 & 0.16 & 0.29 & 0.09 & 0.17 & 0.26 & 0.39 \\
+& 2000 & 0.12 & 0.22 & 0.12 & 0.26 & 0.07 & 0.15 & 0.25 & 0.40 \\
+& 3000 & 0.10 & 0.20 & 0.08 & 0.22 & 0.05 & 0.13 & 0.23 & 0.40 \\
+& 4000 & 0.09 & 0.18 & 0.09 & 0.20 & 0.04 & 0.11 & 0.23 & 0.41 \\
+& 5000 & 0.09 & 0.18 & 0.09 & 0.19 & 0.05 & 0.12 & 0.23 & 0.41 \\
+\hline
+\multirow{5}{*}{-0.5}
+& 1000 & 0.12 & 0.19 & 0.08 & 0.22 & 0.06 & 0.13 & 0.21 & 0.32 \\
+& 2000 & 0.09 & 0.15 & 0.06 & 0.18 & 0.04 & 0.12 & 0.20 & 0.32 \\
+& 3000 & 0.07 & 0.13 & 0.05 & 0.16 & 0.03 & 0.09 & 0.19 & 0.33 \\
+& 4000 & 0.06 & 0.11 & 0.04 & 0.14 & 0.03 & 0.08 & 0.17 & 0.33 \\
+& 5000 & 0.04 & 0.10 & 0.04 & 0.12 & 0.02 & 0.06 & 0.17 & 0.33 \\
+\hline
+\hline
+\end{tabular}
+}
+
+
+\caption{Mean misclassification rate with Algorithm~\ref{alg: step I} and distance recovery method for $\theta \asymp n^{-3/4}$ (with $\theta=0.01$ for $n=1000$).}
+\label{tab:mean_error_scale_n34}
+\end{table}

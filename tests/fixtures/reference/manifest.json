@@ -1,0 +1,435 @@
+{
+  "python": "3.11.5 | packaged by Anaconda, Inc. | (main, Sep 11 2023, 13:26:23) [MSC v.1916 64 bit (AMD64)]",
+  "versions": {
+    "numpy": "2.0.2",
+    "pandas": "3.0.2",
+    "scipy": "1.17.1",
+    "igraph": "0.11.9",
+    "networkx": "3.2.1",
+    "matplotlib": "3.10.8"
+  },
+  "source_sha256": {
+    "leaf_stripping_recovery.py": "bdcb0e676d70887289c1d2949208507991594f9753bf700f8c7770d052ffcbcc",
+    "experiment_distance_recovery_recursive_new.py": "ca1eb966e4697aef144f92e8bd7e6d28ad5d079e2016b80b512f408ceb74cf9d",
+    "baseline_clustering.py": "72ed3101dcb6416bad92129fbf547ed859a7d08aabe123f264bbface30573cf7"
+  },
+  "cases": [
+    {
+      "name": "k2_alpha-0.5",
+      "seed": 1042,
+      "algorithm_seed": 1043,
+      "alpha": -0.5,
+      "sizes": [
+        100,
+        100
+      ],
+      "theta": 0.03,
+      "kwargs": {
+        "K": 2,
+        "b": 10,
+        "d": 0,
+        "select_by": "initial",
+        "min_component_size": 20,
+        "recover": true,
+        "recover_mode": "distance_threshold",
+        "threshold_by": "order",
+        "mode": "True",
+        "check_protected_removal": true,
+        "recovery_threshold_divisor": 2.0
+      },
+      "cluster_count": 2,
+      "component_sizes": [
+        5,
+        6
+      ],
+      "references": [
+        [
+          100,
+          101,
+          103,
+          155,
+          184
+        ],
+        [
+          0,
+          2,
+          3,
+          9,
+          12,
+          25
+        ]
+      ],
+      "metrics": {
+        "first_10": 0.1,
+        "first_50": 0.17,
+        "highdeg_10": 0.1,
+        "highdeg_50": 0.2,
+        "overall_classified": 0.225,
+        "weighted_overall": 0.13314025738763102,
+        "weighted_overall_t1_log": 0.10493525757263704,
+        "weighted_overall_t3_2": 0.08348152851245379,
+        "weighted_overall_r2": 0.050156044281424096,
+        "weighted_overall_deg2": 0.16420350510070625,
+        "weighted_overall_deg2_log": 0.1525549424433999,
+        "weighted_overall_deg3": 0.11532488421753238,
+        "weighted_overall_deg4": 0.06459586918149327,
+        "root": 0.0,
+        "depth_1": 0.0784313725490196,
+        "depth_2": 0.2375
+      },
+      "graph_sha256": "46a96dff38a8edce3af63debff68b5a5978f07e7dbcaff2514fb0c4024a13c3f"
+    },
+    {
+      "name": "k2_alpha0",
+      "seed": 1042,
+      "algorithm_seed": 1043,
+      "alpha": 0,
+      "sizes": [
+        100,
+        100
+      ],
+      "theta": 0.03,
+      "kwargs": {
+        "K": 2,
+        "b": 10,
+        "d": 0,
+        "select_by": "initial",
+        "min_component_size": 20,
+        "recover": true,
+        "recover_mode": "distance_threshold",
+        "threshold_by": "order",
+        "mode": "True",
+        "check_protected_removal": true,
+        "recovery_threshold_divisor": 2.0
+      },
+      "cluster_count": 2,
+      "component_sizes": [
+        3,
+        6
+      ],
+      "references": [
+        [
+          28,
+          100,
+          104
+        ],
+        [
+          0,
+          1,
+          4,
+          9,
+          10,
+          120
+        ]
+      ],
+      "metrics": {
+        "first_10": 0.2,
+        "first_50": 0.3,
+        "highdeg_10": 0.1,
+        "highdeg_50": 0.32,
+        "overall_classified": 0.305,
+        "weighted_overall": 0.2335022280269615,
+        "weighted_overall_t1_log": 0.24803214870098006,
+        "weighted_overall_t3_2": 0.17978308721325262,
+        "weighted_overall_r2": 0.13209990547746253,
+        "weighted_overall_deg2": 0.26950453593859036,
+        "weighted_overall_deg2_log": 0.25709522547133373,
+        "weighted_overall_deg3": 0.21146098824303214,
+        "weighted_overall_deg4": 0.13318284752377707,
+        "root": 0.0,
+        "depth_1": 0.08333333333333333,
+        "depth_2": 0.2375
+      },
+      "graph_sha256": "8ab352bf85bf691a85635a629e8979443440ca8e80e73d4e61573f0d4ba4b9dd"
+    },
+    {
+      "name": "k2_alpha2",
+      "seed": 1042,
+      "algorithm_seed": 1043,
+      "alpha": 2,
+      "sizes": [
+        100,
+        100
+      ],
+      "theta": 0.03,
+      "kwargs": {
+        "K": 2,
+        "b": 10,
+        "d": 0,
+        "select_by": "initial",
+        "min_component_size": 20,
+        "recover": true,
+        "recover_mode": "distance_threshold",
+        "threshold_by": "order",
+        "mode": "True",
+        "check_protected_removal": true,
+        "recovery_threshold_divisor": 2.0
+      },
+      "cluster_count": 2,
+      "component_sizes": [
+        12,
+        5
+      ],
+      "references": [
+        [
+          2,
+          3,
+          8,
+          17,
+          28,
+          100,
+          105,
+          109,
+          112,
+          114,
+          120,
+          155
+        ],
+        [
+          1,
+          9,
+          24,
+          25,
+          170
+        ]
+      ],
+      "metrics": {
+        "first_10": 0.25,
+        "first_50": 0.36,
+        "highdeg_10": 0.3,
+        "highdeg_50": 0.44,
+        "overall_classified": 0.4,
+        "weighted_overall": 0.26958919978880447,
+        "weighted_overall_t1_log": 0.2056262832411344,
+        "weighted_overall_t3_2": 0.16906117334292717,
+        "weighted_overall_r2": 0.09547091696691092,
+        "weighted_overall_deg2": 0.38226765260258083,
+        "weighted_overall_deg2_log": 0.37742072462736137,
+        "weighted_overall_deg3": 0.3597592322851512,
+        "weighted_overall_deg4": 0.3213454121423687,
+        "root": 0.0,
+        "depth_1": 0.09090909090909091,
+        "depth_2": 0.32727272727272727
+      },
+      "graph_sha256": "a0dcbcfc6a428e36274c9a19dcc878ab113cd6c70a20183847b810855d0f7d14"
+    },
+    {
+      "name": "k3_alpha-0.5",
+      "seed": 1042,
+      "algorithm_seed": 1043,
+      "alpha": -0.5,
+      "sizes": [
+        120,
+        80,
+        40
+      ],
+      "theta": 0.03,
+      "kwargs": {
+        "K": 3,
+        "b": 15,
+        "d": 0,
+        "select_by": "initial",
+        "min_component_size": 24,
+        "recover": true,
+        "recover_mode": "distance_threshold",
+        "threshold_by": "order",
+        "mode": "True",
+        "check_protected_removal": true,
+        "recovery_threshold_divisor": 2.0
+      },
+      "cluster_count": 3,
+      "component_sizes": [
+        3,
+        6,
+        3
+      ],
+      "references": [
+        [
+          5,
+          120,
+          121
+        ],
+        [
+          0,
+          6,
+          9,
+          11,
+          12,
+          84
+        ],
+        [
+          85,
+          202,
+          203
+        ]
+      ],
+      "metrics": {
+        "first_10": 0.3333333333333333,
+        "first_50": 0.38571428571428573,
+        "highdeg_10": 0.1,
+        "highdeg_50": 0.44,
+        "overall_classified": 0.4125,
+        "weighted_overall": 0.3253500685211324,
+        "weighted_overall_t1_log": 0.33929702381573695,
+        "weighted_overall_t3_2": 0.24655561429682313,
+        "weighted_overall_r2": 0.176645114249616,
+        "weighted_overall_deg2": 0.35962776134979996,
+        "weighted_overall_deg2_log": 0.33836382666944936,
+        "weighted_overall_deg3": 0.2590469625786791,
+        "weighted_overall_deg4": 0.1413762701626807,
+        "root": 0.0,
+        "depth_1": 0.19148936170212766,
+        "depth_2": 0.37
+      },
+      "graph_sha256": "f80f2fea96eb2d0771518d39fe9c1912bdaf527fdf19ca18ee5ec612c4ba488d"
+    },
+    {
+      "name": "k3_alpha0",
+      "seed": 1042,
+      "algorithm_seed": 1043,
+      "alpha": 0,
+      "sizes": [
+        120,
+        80,
+        40
+      ],
+      "theta": 0.03,
+      "kwargs": {
+        "K": 3,
+        "b": 15,
+        "d": 0,
+        "select_by": "initial",
+        "min_component_size": 24,
+        "recover": true,
+        "recover_mode": "distance_threshold",
+        "threshold_by": "order",
+        "mode": "True",
+        "check_protected_removal": true,
+        "recovery_threshold_divisor": 2.0
+      },
+      "cluster_count": 3,
+      "component_sizes": [
+        7,
+        6,
+        3
+      ],
+      "references": [
+        [
+          12,
+          120,
+          121,
+          122,
+          123,
+          131,
+          234
+        ],
+        [
+          0,
+          1,
+          9,
+          10,
+          35,
+          202
+        ],
+        [
+          50,
+          84,
+          103
+        ]
+      ],
+      "metrics": {
+        "first_10": 0.43333333333333335,
+        "first_50": 0.5,
+        "highdeg_10": 0.2,
+        "highdeg_50": 0.4,
+        "overall_classified": 0.4791666666666667,
+        "weighted_overall": 0.4368963052409066,
+        "weighted_overall_t1_log": 0.4010906975829483,
+        "weighted_overall_t3_2": 0.3918173202310695,
+        "weighted_overall_r2": 0.3600531928329669,
+        "weighted_overall_deg2": 0.43551688843398156,
+        "weighted_overall_deg2_log": 0.42653876326950135,
+        "weighted_overall_deg3": 0.39997982243744956,
+        "weighted_overall_deg4": 0.35537238858315284,
+        "root": 0.3333333333333333,
+        "depth_1": 0.20689655172413793,
+        "depth_2": 0.3695652173913043
+      },
+      "graph_sha256": "dd9300e413f8ac75955f3a0bbbed74e26f770e3f33339b302bce3ee62b972d50"
+    },
+    {
+      "name": "k3_alpha2",
+      "seed": 1042,
+      "algorithm_seed": 1043,
+      "alpha": 2,
+      "sizes": [
+        120,
+        80,
+        40
+      ],
+      "theta": 0.03,
+      "kwargs": {
+        "K": 3,
+        "b": 15,
+        "d": 0,
+        "select_by": "initial",
+        "min_component_size": 24,
+        "recover": true,
+        "recover_mode": "distance_threshold",
+        "threshold_by": "order",
+        "mode": "True",
+        "check_protected_removal": true,
+        "recovery_threshold_divisor": 2.0
+      },
+      "cluster_count": 3,
+      "component_sizes": [
+        4,
+        8,
+        4
+      ],
+      "references": [
+        [
+          1,
+          9,
+          26,
+          202
+        ],
+        [
+          2,
+          19,
+          85,
+          94,
+          120,
+          121,
+          126,
+          215
+        ],
+        [
+          50,
+          84,
+          103,
+          229
+        ]
+      ],
+      "metrics": {
+        "first_10": 0.5,
+        "first_50": 0.6,
+        "highdeg_10": 0.5,
+        "highdeg_50": 0.56,
+        "overall_classified": 0.6208333333333333,
+        "weighted_overall": 0.5559961929535953,
+        "weighted_overall_t1_log": 0.5081779538956283,
+        "weighted_overall_t3_2": 0.47991384196493075,
+        "weighted_overall_r2": 0.42629310543275245,
+        "weighted_overall_deg2": 0.6003225500426904,
+        "weighted_overall_deg2_log": 0.5967890558345027,
+        "weighted_overall_deg3": 0.588215851367337,
+        "weighted_overall_deg4": 0.5750784069954937,
+        "root": 0.3333333333333333,
+        "depth_1": 0.375,
+        "depth_2": 0.5490196078431373
+      },
+      "graph_sha256": "eb538ee02fdb33298a3d2790589c12a217c732ae041671fb1863f56680b03ddf"
+    }
+  ]
+}

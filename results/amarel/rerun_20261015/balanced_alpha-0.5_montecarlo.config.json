@@ -1,0 +1,51 @@
+{
+  "config": {
+    "scenario": "balanced",
+    "alpha": -0.5,
+    "n_list": [
+      1000,
+      2000,
+      3000,
+      4000,
+      5000
+    ],
+    "n_ref": 1000,
+    "base_n": 5000,
+    "implementation": "paper",
+    "allow_distance_fallback": true,
+    "theta_ref": 0.01,
+    "repeats": 200,
+    "num_cores": 25,
+    "seed_base": 42,
+    "mc_burn": 30,
+    "mc_target_valid": 200,
+    "mc_min_valid": 50,
+    "mc_samples_per_chain": 200,
+    "mc_max_chains": 5
+  },
+  "phase": "montecarlo",
+  "schema_version": 2,
+  "paper_revision": "fd5198d",
+  "source_sha256": {
+    "spar.py": "f429073d4a080dc9f2be2090385e0a57176e8fe1a95e9f070c2bcd2a7fe9c9c7",
+    "experiments.py": "1db9c137f9438796d7e1334857e4c5625fd2b40f9398c4f65ac343cec2eef185",
+    "baselines.py": "512d3703c11954c82340465157c53b0ae640866de2837b7d9d350d7bc8f3a9d5",
+    "mcmc/__init__.py": "d53af18d67e9830f9fd12f34c854a605f3bcf6d843048c5cd177ac244ab10f8d",
+    "mcmc/estimateAlpha.py": "bda3f2165ce23205b8476d44601c61509e48f64f2a5ad8ee1cf0ad3611db125f",
+    "mcmc/gibbsSampling.py": "25d5c10b27d193ab8efa0b2ff922e2dcaacdb3b842391f16a1736f3af9d2ab71",
+    "mcmc/tree_tools.py": "4e0ca7579be9603b922e0fd7926e04d1e8a8e5d9a31075a4d1888344314e5a1a",
+    "mcmc/two_founder.py": "8f941ec3940b124edf7197f3953f027a5d9da12d06d5b7ecc86d0ad3ccd2c438",
+    "reports/validation/legacy_spar.py": "03676909522d896c9829a53dac2e973a565e221ad8ef8b1ff8ec3fbb2fa87f2a"
+  },
+  "runtime_versions": {
+    "python": "3.11.14",
+    "numpy": "2.4.1",
+    "pandas": "3.0.0",
+    "scipy": "1.17.0",
+    "networkx": "3.6.1",
+    "igraph": "1.0.0"
+  },
+  "metric_convention": "per-subset optimal permutation; weighted errors normalized",
+  "failure_convention": "missing errors for failures; MC low-valid-sample distance fallback explicitly counted",
+  "mc_target_status": "legacy fixed-K kernel; RC-PF posterior target not verified"
+}

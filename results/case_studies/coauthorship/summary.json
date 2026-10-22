@@ -1,0 +1,74 @@
+{
+  "nodes": 2263,
+  "edges": 4388,
+  "samples": 1000,
+  "valid_samples": 572,
+  "agreement": 0.9845338046840477,
+  "alpha": 0,
+  "alpha_estimate": 0.0,
+  "alpha_source": "estimateAlphaEM, K=2",
+  "implementation": "paper",
+  "rank": 10,
+  "effective_rank": 10,
+  "core_sizes": [
+    25,
+    253
+  ],
+  "coverage": {
+    "cores": {
+      "1": {
+        "assigned": 25,
+        "displayed": 25
+      },
+      "2": {
+        "assigned": 253,
+        "displayed": 253
+      }
+    },
+    "distance": {
+      "1": {
+        "assigned": 105,
+        "displayed": 103
+      },
+      "2": {
+        "assigned": 2158,
+        "displayed": 2156
+      }
+    },
+    "monte_carlo": {
+      "1": {
+        "assigned": 124,
+        "displayed": 124
+      },
+      "2": {
+        "assigned": 2139,
+        "displayed": 2139
+      }
+    }
+  },
+  "shared_recovery_layout": "layout.csv",
+  "seed_selection": "Seed 7 selected by the user; other seed runs retained as diagnostics.",
+  "outputs": [
+    "assignments.csv",
+    "core_component_1.pdf",
+    "core_component_2.pdf",
+    "dist_recovery_cluster_1.pdf",
+    "dist_recovery_cluster_2.pdf",
+    "layout.csv",
+    "mc_recovery_cluster_1.pdf",
+    "mc_recovery_cluster_2.pdf"
+  ],
+  "plot_style": "8x8-inch panels; saturated red/blue nodes of area20; 16pt names; pale 0.35pt edges; shared recovery layout.",
+  "mc_seeds": [
+    7
+  ],
+  "samples_per_chain": 1000,
+  "burn_per_chain": 50,
+  "valid_samples_by_seed": {
+    "7": 572
+  },
+  "seed_mode": "two_node",
+  "tie_seed": null,
+  "mixing_note": "Finite-chain convergence is not established; acceptance and probabilities vary across seeds.",
+  "mc_seed": 7
+}

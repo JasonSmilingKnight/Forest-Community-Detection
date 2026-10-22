@@ -1,0 +1,1555 @@
+{
+  "paper_revision": "fd5198d",
+  "source": "main_jmlr.tex",
+  "source_sha256": "fd16e8ace0ad32d02aa5880a9187cec75e741e139085d71a16917f8d6d79b1c6",
+  "reference_values_are_rounded": true,
+  "scenarios": {
+    "balanced": {
+      "K": 2,
+      "sizes": [
+        1000,
+        2000,
+        3000,
+        4000,
+        5000
+      ],
+      "ratios": [
+        1,
+        1
+      ],
+      "alphas": [
+        -0.5,
+        0,
+        2
+      ],
+      "noise_exponents": [
+        1,
+        0.75,
+        0.5
+      ],
+      "n_ref": 1000,
+      "theta_ref": 0.01,
+      "repetitions": 200,
+      "degree_rank": 10,
+      "initial_Q": "floor(n/10)",
+      "shrink": 0.8,
+      "recovery_threshold": "min(D*,tau/2)",
+      "methods": [
+        "spar",
+        "score",
+        "gmzz",
+        "monte_carlo"
+      ]
+    },
+    "unbalanced": {
+      "K": 3,
+      "sizes": [
+        1200,
+        2400,
+        3600,
+        4800,
+        6000
+      ],
+      "ratios": [
+        3,
+        2,
+        1
+      ],
+      "alphas": [
+        -0.5,
+        0,
+        2
+      ],
+      "noise_exponents": [
+        1,
+        0.75,
+        0.5
+      ],
+      "n_ref": 1200,
+      "theta_ref": 0.01,
+      "repetitions": 200,
+      "degree_rank": 15,
+      "initial_Q": "floor(n/10)",
+      "shrink": 0.8,
+      "recovery_threshold": "min(D*,tau/2)",
+      "paper_reported_methods": [
+        "spar"
+      ]
+    }
+  },
+  "not_in_current_paper": [
+    "c2",
+    "Simmons",
+    "Polblogs"
+  ],
+  "figures": {
+    "fig: co-authorship graph info": {
+      "line": 171,
+      "files": [
+        "numerical_output/tmp_stats.pdf",
+        "numerical_output/dunson_brown_neighbourhood.pdf",
+        "numerical_output/degree_distribution.pdf"
+      ],
+      "labels": [
+        "fig: co-authorship graph",
+        "fig: co-authorship graph local",
+        "fig: co-authorship graph degree",
+        "fig: co-authorship graph info"
+      ]
+    },
+    "fig: mean first 50 comparison": {
+      "line": 970,
+      "files": [
+        "numerical_output/mean_3x3_first_50.pdf"
+      ],
+      "labels": [
+        "fig: mean first 50 comparison"
+      ]
+    },
+    "fig: arrival weighted comparison": {
+      "line": 985,
+      "files": [
+        "numerical_output/mean_1x4_c1_alpha0_rate1_arrival_time_weights.pdf"
+      ],
+      "labels": [
+        "fig: arrival weighted comparison"
+      ]
+    },
+    "fig: degree weighted comparison": {
+      "line": 997,
+      "files": [
+        "numerical_output/mean_1x4_c1_alpha0_rate1_degree_weights.pdf"
+      ],
+      "labels": [
+        "fig: degree weighted comparison"
+      ]
+    },
+    "fig: cores": {
+      "line": 1029,
+      "files": [
+        "numerical_output/core_component_1.pdf",
+        "numerical_output/core_component_2.pdf"
+      ],
+      "labels": [
+        "fig: cores"
+      ]
+    },
+    "fig: distance recovery": {
+      "line": 1051,
+      "files": [
+        "numerical_output/dist_recovery_cluster_1.pdf",
+        "numerical_output/dist_recovery_cluster_2.pdf"
+      ],
+      "labels": [
+        "fig: distance recovery"
+      ]
+    },
+    "fig: dendrogram": {
+      "line": 1090,
+      "files": [
+        "case_study_iter_core/community_tree.pdf"
+      ],
+      "labels": [
+        "fig: dendrogram"
+      ]
+    },
+    "fig: clustering example": {
+      "line": 1097,
+      "files": [
+        "case_study_iter_core/final_dist_cluster_1.pdf",
+        "case_study_iter_core/final_dist_cluster_2.pdf",
+        "case_study_iter_core/final_dist_cluster_13.pdf",
+        "case_study_iter_core/final_dist_cluster_14.pdf",
+        "case_study_iter_core/final_dist_cluster_19.pdf",
+        "case_study_iter_core/final_dist_cluster_20.pdf"
+      ],
+      "labels": [
+        "fig: clustering example"
+      ]
+    },
+    "fig: improved algorithm": {
+      "line": 1975,
+      "files": [
+        "numerical_output/figure1_original_graph.pdf",
+        "numerical_output/figure4_remaining_nodes.pdf",
+        "numerical_output/figure5_manual_coloring.pdf"
+      ],
+      "labels": [
+        "fig: improved algorithm a",
+        "fig: improved algorithm b",
+        "fig: improved algorithm c",
+        "fig: improved algorithm"
+      ]
+    },
+    "fig: simple algorithm": {
+      "line": 2025,
+      "files": [
+        "numerical_output/figure1_original_graph.pdf",
+        "numerical_output/figure2_algorithm_colored_result.pdf",
+        "numerical_output/figure3_recovered_communities.pdf"
+      ],
+      "labels": [
+        "fig: simple algorithm a",
+        "fig: simple algorithm b",
+        "fig: simple algorithm c",
+        "fig: simple algorithm"
+      ]
+    },
+    "fig: MCMC_results": {
+      "line": 2073,
+      "files": [
+        "numerical_output/hard_classification.pdf",
+        "numerical_output/soft_classification.pdf"
+      ],
+      "labels": [
+        "fig: hard_classification",
+        "fig: soft_classification",
+        "fig: MCMC_results"
+      ]
+    },
+    "fig: first 50 3 times 3 again": {
+      "line": 2281,
+      "files": [
+        "numerical_output/boxplot_3x3_first_50.pdf"
+      ],
+      "labels": [
+        "fig: first 50 3 times 3 again"
+      ]
+    },
+    "fig: high degree 50 3 times 3": {
+      "line": 2289,
+      "files": [
+        "numerical_output/boxplot_3x3_highdeg_50.pdf"
+      ],
+      "labels": [
+        "fig: high degree 50 3 times 3"
+      ]
+    },
+    "fig: layer 1 3 times 3 again": {
+      "line": 2297,
+      "files": [
+        "numerical_output/boxplot_3x3_depth_1.pdf"
+      ],
+      "labels": [
+        "fig: layer 1 3 times 3 again"
+      ]
+    },
+    "fig: depth comparison": {
+      "line": 2331,
+      "files": [
+        "numerical_output/mean_3x3_depth_1.pdf"
+      ],
+      "labels": [
+        "fig: depth comparison"
+      ]
+    },
+    "fig: highdegree comparison": {
+      "line": 2338,
+      "files": [
+        "numerical_output/mean_3x3_highdeg_50.pdf"
+      ],
+      "labels": [
+        "fig: highdegree comparison"
+      ]
+    },
+    "fig: weighted full t1": {
+      "line": 2345,
+      "files": [
+        "numerical_output/mean_3x3_weighted_overall_t1.pdf"
+      ],
+      "labels": [
+        "fig: weighted full t1"
+      ]
+    },
+    "fig: weighted full t1_log": {
+      "line": 2352,
+      "files": [
+        "numerical_output/mean_3x3_weighted_overall_t1_log.pdf"
+      ],
+      "labels": [
+        "fig: weighted full t1_log"
+      ]
+    },
+    "fig: weighted full t3_2": {
+      "line": 2359,
+      "files": [
+        "numerical_output/mean_3x3_weighted_overall_t3_2.pdf"
+      ],
+      "labels": [
+        "fig: weighted full t3_2"
+      ]
+    },
+    "fig: weighted full t2": {
+      "line": 2366,
+      "files": [
+        "numerical_output/mean_3x3_weighted_overall_t2.pdf"
+      ],
+      "labels": [
+        "fig: weighted full t2"
+      ]
+    },
+    "fig: weighted full deg2": {
+      "line": 2373,
+      "files": [
+        "numerical_output/mean_3x3_weighted_overall_deg2.pdf"
+      ],
+      "labels": [
+        "fig: weighted full deg2"
+      ]
+    },
+    "fig: weighted full deg2_log": {
+      "line": 2380,
+      "files": [
+        "numerical_output/mean_3x3_weighted_overall_deg2_log.pdf"
+      ],
+      "labels": [
+        "fig: weighted full deg2_log"
+      ]
+    },
+    "fig: weighted full deg3": {
+      "line": 2387,
+      "files": [
+        "numerical_output/mean_3x3_weighted_overall_deg3.pdf"
+      ],
+      "labels": [
+        "fig: weighted full deg3"
+      ]
+    },
+    "fig: weighted full deg4": {
+      "line": 2394,
+      "files": [
+        "numerical_output/mean_3x3_weighted_overall_deg4.pdf"
+      ],
+      "labels": [
+        "fig: weighted full deg4"
+      ]
+    },
+    "fig: 3 first 50 3 times 3": {
+      "line": 2575,
+      "files": [
+        "numerical_output/boxplot_3x3_K3_first_50.pdf"
+      ],
+      "labels": [
+        "fig: 3 first 50 3 times 3"
+      ]
+    },
+    "fig: 3 high degree 50 3 times 3": {
+      "line": 2582,
+      "files": [
+        "numerical_output/boxplot_3x3_K3_highdeg_50.pdf"
+      ],
+      "labels": [
+        "fig: 3 high degree 50 3 times 3"
+      ]
+    },
+    "fig: 3 layer 1 3 times 3": {
+      "line": 2590,
+      "files": [
+        "numerical_output/boxplot_3x3_K3_depth_1.pdf"
+      ],
+      "labels": [
+        "fig: 3 layer 1 3 times 3"
+      ]
+    },
+    "fig: mc recovery": {
+      "line": 2606,
+      "files": [
+        "numerical_output/mc_recovery_cluster_1.pdf",
+        "numerical_output/mc_recovery_cluster_2.pdf"
+      ],
+      "labels": [
+        "fig: mc recovery"
+      ]
+    },
+    "fig: h clustering I": {
+      "line": 2640,
+      "files": [
+        "case_study_iter_core/final_dist_cluster_1.pdf",
+        "case_study_iter_core/final_dist_cluster_2.pdf",
+        "case_study_iter_core/final_dist_cluster_3.pdf",
+        "case_study_iter_core/final_dist_cluster_4.pdf",
+        "case_study_iter_core/final_dist_cluster_5.pdf",
+        "case_study_iter_core/final_dist_cluster_6.pdf"
+      ],
+      "labels": [
+        "fig: h clustering I"
+      ]
+    },
+    "fig: h clustering II": {
+      "line": 2687,
+      "files": [
+        "case_study_iter_core/final_dist_cluster_7.pdf",
+        "case_study_iter_core/final_dist_cluster_8.pdf",
+        "case_study_iter_core/final_dist_cluster_9.pdf",
+        "case_study_iter_core/final_dist_cluster_10.pdf",
+        "case_study_iter_core/final_dist_cluster_11.pdf",
+        "case_study_iter_core/final_dist_cluster_12.pdf"
+      ],
+      "labels": [
+        "fig: h clustering II"
+      ]
+    },
+    "fig: h clustering III": {
+      "line": 2733,
+      "files": [
+        "case_study_iter_core/final_dist_cluster_13.pdf",
+        "case_study_iter_core/final_dist_cluster_14.pdf",
+        "case_study_iter_core/final_dist_cluster_15.pdf",
+        "case_study_iter_core/final_dist_cluster_16.pdf",
+        "case_study_iter_core/final_dist_cluster_17.pdf",
+        "case_study_iter_core/final_dist_cluster_18.pdf",
+        "case_study_iter_core/final_dist_cluster_19.pdf",
+        "case_study_iter_core/final_dist_cluster_20.pdf"
+      ],
+      "labels": [
+        "fig: h clustering III"
+      ]
+    }
+  },
+  "tables": {
+    "tab:mean_error_scale_n1": {
+      "line": 2117,
+      "rows": [
+        {
+          "alpha": 2.0,
+          "n": 1000,
+          "first_10": 0.27,
+          "first_50": 0.37,
+          "highdeg_10": 0.29,
+          "highdeg_50": 0.39,
+          "root": 0.19,
+          "depth_1": 0.25,
+          "depth_2": 0.34,
+          "overall_classified": 0.46
+        },
+        {
+          "alpha": 2.0,
+          "n": 2000,
+          "first_10": 0.22,
+          "first_50": 0.33,
+          "highdeg_10": 0.25,
+          "highdeg_50": 0.37,
+          "root": 0.17,
+          "depth_1": 0.21,
+          "depth_2": 0.31,
+          "overall_classified": 0.46
+        },
+        {
+          "alpha": 2.0,
+          "n": 3000,
+          "first_10": 0.2,
+          "first_50": 0.31,
+          "highdeg_10": 0.24,
+          "highdeg_50": 0.35,
+          "root": 0.14,
+          "depth_1": 0.19,
+          "depth_2": 0.29,
+          "overall_classified": 0.46
+        },
+        {
+          "alpha": 2.0,
+          "n": 4000,
+          "first_10": 0.2,
+          "first_50": 0.3,
+          "highdeg_10": 0.22,
+          "highdeg_50": 0.34,
+          "root": 0.13,
+          "depth_1": 0.2,
+          "depth_2": 0.3,
+          "overall_classified": 0.46
+        },
+        {
+          "alpha": 2.0,
+          "n": 5000,
+          "first_10": 0.18,
+          "first_50": 0.28,
+          "highdeg_10": 0.2,
+          "highdeg_50": 0.32,
+          "root": 0.13,
+          "depth_1": 0.18,
+          "depth_2": 0.28,
+          "overall_classified": 0.46
+        },
+        {
+          "alpha": 0.0,
+          "n": 1000,
+          "first_10": 0.16,
+          "first_50": 0.25,
+          "highdeg_10": 0.14,
+          "highdeg_50": 0.29,
+          "root": 0.08,
+          "depth_1": 0.16,
+          "depth_2": 0.26,
+          "overall_classified": 0.39
+        },
+        {
+          "alpha": 0.0,
+          "n": 2000,
+          "first_10": 0.12,
+          "first_50": 0.2,
+          "highdeg_10": 0.09,
+          "highdeg_50": 0.23,
+          "root": 0.06,
+          "depth_1": 0.13,
+          "depth_2": 0.23,
+          "overall_classified": 0.39
+        },
+        {
+          "alpha": 0.0,
+          "n": 3000,
+          "first_10": 0.09,
+          "first_50": 0.17,
+          "highdeg_10": 0.09,
+          "highdeg_50": 0.19,
+          "root": 0.04,
+          "depth_1": 0.11,
+          "depth_2": 0.2,
+          "overall_classified": 0.39
+        },
+        {
+          "alpha": 0.0,
+          "n": 4000,
+          "first_10": 0.08,
+          "first_50": 0.16,
+          "highdeg_10": 0.07,
+          "highdeg_50": 0.17,
+          "root": 0.04,
+          "depth_1": 0.09,
+          "depth_2": 0.2,
+          "overall_classified": 0.39
+        },
+        {
+          "alpha": 0.0,
+          "n": 5000,
+          "first_10": 0.06,
+          "first_50": 0.13,
+          "highdeg_10": 0.05,
+          "highdeg_50": 0.15,
+          "root": 0.03,
+          "depth_1": 0.07,
+          "depth_2": 0.18,
+          "overall_classified": 0.38
+        },
+        {
+          "alpha": -0.5,
+          "n": 1000,
+          "first_10": 0.11,
+          "first_50": 0.18,
+          "highdeg_10": 0.07,
+          "highdeg_50": 0.21,
+          "root": 0.05,
+          "depth_1": 0.13,
+          "depth_2": 0.21,
+          "overall_classified": 0.32
+        },
+        {
+          "alpha": -0.5,
+          "n": 2000,
+          "first_10": 0.07,
+          "first_50": 0.14,
+          "highdeg_10": 0.05,
+          "highdeg_50": 0.15,
+          "root": 0.03,
+          "depth_1": 0.1,
+          "depth_2": 0.18,
+          "overall_classified": 0.31
+        },
+        {
+          "alpha": -0.5,
+          "n": 3000,
+          "first_10": 0.05,
+          "first_50": 0.1,
+          "highdeg_10": 0.04,
+          "highdeg_50": 0.12,
+          "root": 0.03,
+          "depth_1": 0.07,
+          "depth_2": 0.16,
+          "overall_classified": 0.31
+        },
+        {
+          "alpha": -0.5,
+          "n": 4000,
+          "first_10": 0.04,
+          "first_50": 0.08,
+          "highdeg_10": 0.03,
+          "highdeg_50": 0.1,
+          "root": 0.02,
+          "depth_1": 0.05,
+          "depth_2": 0.15,
+          "overall_classified": 0.31
+        },
+        {
+          "alpha": -0.5,
+          "n": 5000,
+          "first_10": 0.03,
+          "first_50": 0.07,
+          "highdeg_10": 0.03,
+          "highdeg_50": 0.09,
+          "root": 0.01,
+          "depth_1": 0.04,
+          "depth_2": 0.14,
+          "overall_classified": 0.31
+        }
+      ]
+    },
+    "tab:mean_error_scale_n34": {
+      "line": 2173,
+      "rows": [
+        {
+          "alpha": 2.0,
+          "n": 1000,
+          "first_10": 0.27,
+          "first_50": 0.37,
+          "highdeg_10": 0.28,
+          "highdeg_50": 0.38,
+          "root": 0.19,
+          "depth_1": 0.25,
+          "depth_2": 0.34,
+          "overall_classified": 0.46
+        },
+        {
+          "alpha": 2.0,
+          "n": 2000,
+          "first_10": 0.26,
+          "first_50": 0.36,
+          "highdeg_10": 0.26,
+          "highdeg_50": 0.37,
+          "root": 0.18,
+          "depth_1": 0.24,
+          "depth_2": 0.34,
+          "overall_classified": 0.47
+        },
+        {
+          "alpha": 2.0,
+          "n": 3000,
+          "first_10": 0.23,
+          "first_50": 0.34,
+          "highdeg_10": 0.25,
+          "highdeg_50": 0.37,
+          "root": 0.15,
+          "depth_1": 0.23,
+          "depth_2": 0.33,
+          "overall_classified": 0.47
+        },
+        {
+          "alpha": 2.0,
+          "n": 4000,
+          "first_10": 0.21,
+          "first_50": 0.32,
+          "highdeg_10": 0.24,
+          "highdeg_50": 0.36,
+          "root": 0.15,
+          "depth_1": 0.2,
+          "depth_2": 0.32,
+          "overall_classified": 0.47
+        },
+        {
+          "alpha": 2.0,
+          "n": 5000,
+          "first_10": 0.2,
+          "first_50": 0.32,
+          "highdeg_10": 0.24,
+          "highdeg_50": 0.37,
+          "root": 0.13,
+          "depth_1": 0.2,
+          "depth_2": 0.32,
+          "overall_classified": 0.48
+        },
+        {
+          "alpha": 0.0,
+          "n": 1000,
+          "first_10": 0.15,
+          "first_50": 0.25,
+          "highdeg_10": 0.14,
+          "highdeg_50": 0.29,
+          "root": 0.07,
+          "depth_1": 0.15,
+          "depth_2": 0.25,
+          "overall_classified": 0.39
+        },
+        {
+          "alpha": 0.0,
+          "n": 2000,
+          "first_10": 0.13,
+          "first_50": 0.23,
+          "highdeg_10": 0.12,
+          "highdeg_50": 0.26,
+          "root": 0.09,
+          "depth_1": 0.15,
+          "depth_2": 0.24,
+          "overall_classified": 0.4
+        },
+        {
+          "alpha": 0.0,
+          "n": 3000,
+          "first_10": 0.1,
+          "first_50": 0.2,
+          "highdeg_10": 0.1,
+          "highdeg_50": 0.23,
+          "root": 0.06,
+          "depth_1": 0.12,
+          "depth_2": 0.23,
+          "overall_classified": 0.4
+        },
+        {
+          "alpha": 0.0,
+          "n": 4000,
+          "first_10": 0.09,
+          "first_50": 0.18,
+          "highdeg_10": 0.08,
+          "highdeg_50": 0.2,
+          "root": 0.04,
+          "depth_1": 0.12,
+          "depth_2": 0.22,
+          "overall_classified": 0.41
+        },
+        {
+          "alpha": 0.0,
+          "n": 5000,
+          "first_10": 0.09,
+          "first_50": 0.17,
+          "highdeg_10": 0.08,
+          "highdeg_50": 0.19,
+          "root": 0.04,
+          "depth_1": 0.11,
+          "depth_2": 0.22,
+          "overall_classified": 0.41
+        },
+        {
+          "alpha": -0.5,
+          "n": 1000,
+          "first_10": 0.1,
+          "first_50": 0.18,
+          "highdeg_10": 0.08,
+          "highdeg_50": 0.22,
+          "root": 0.03,
+          "depth_1": 0.12,
+          "depth_2": 0.21,
+          "overall_classified": 0.31
+        },
+        {
+          "alpha": -0.5,
+          "n": 2000,
+          "first_10": 0.09,
+          "first_50": 0.16,
+          "highdeg_10": 0.06,
+          "highdeg_50": 0.18,
+          "root": 0.04,
+          "depth_1": 0.12,
+          "depth_2": 0.2,
+          "overall_classified": 0.32
+        },
+        {
+          "alpha": -0.5,
+          "n": 3000,
+          "first_10": 0.07,
+          "first_50": 0.12,
+          "highdeg_10": 0.04,
+          "highdeg_50": 0.14,
+          "root": 0.02,
+          "depth_1": 0.09,
+          "depth_2": 0.18,
+          "overall_classified": 0.32
+        },
+        {
+          "alpha": -0.5,
+          "n": 4000,
+          "first_10": 0.05,
+          "first_50": 0.11,
+          "highdeg_10": 0.05,
+          "highdeg_50": 0.13,
+          "root": 0.02,
+          "depth_1": 0.08,
+          "depth_2": 0.18,
+          "overall_classified": 0.33
+        },
+        {
+          "alpha": -0.5,
+          "n": 5000,
+          "first_10": 0.05,
+          "first_50": 0.1,
+          "highdeg_10": 0.04,
+          "highdeg_50": 0.11,
+          "root": 0.02,
+          "depth_1": 0.06,
+          "depth_2": 0.17,
+          "overall_classified": 0.33
+        }
+      ]
+    },
+    "tab:mean_error_scale_n12": {
+      "line": 2227,
+      "rows": [
+        {
+          "alpha": 2.0,
+          "n": 1000,
+          "first_10": 0.26,
+          "first_50": 0.37,
+          "highdeg_10": 0.29,
+          "highdeg_50": 0.38,
+          "root": 0.17,
+          "depth_1": 0.24,
+          "depth_2": 0.34,
+          "overall_classified": 0.46
+        },
+        {
+          "alpha": 2.0,
+          "n": 2000,
+          "first_10": 0.27,
+          "first_50": 0.37,
+          "highdeg_10": 0.27,
+          "highdeg_50": 0.39,
+          "root": 0.16,
+          "depth_1": 0.25,
+          "depth_2": 0.36,
+          "overall_classified": 0.47
+        },
+        {
+          "alpha": 2.0,
+          "n": 3000,
+          "first_10": 0.27,
+          "first_50": 0.37,
+          "highdeg_10": 0.3,
+          "highdeg_50": 0.39,
+          "root": 0.2,
+          "depth_1": 0.26,
+          "depth_2": 0.35,
+          "overall_classified": 0.48
+        },
+        {
+          "alpha": 2.0,
+          "n": 4000,
+          "first_10": 0.26,
+          "first_50": 0.36,
+          "highdeg_10": 0.27,
+          "highdeg_50": 0.39,
+          "root": 0.19,
+          "depth_1": 0.24,
+          "depth_2": 0.35,
+          "overall_classified": 0.48
+        },
+        {
+          "alpha": 2.0,
+          "n": 5000,
+          "first_10": 0.26,
+          "first_50": 0.37,
+          "highdeg_10": 0.3,
+          "highdeg_50": 0.4,
+          "root": 0.18,
+          "depth_1": 0.25,
+          "depth_2": 0.37,
+          "overall_classified": 0.48
+        },
+        {
+          "alpha": 0.0,
+          "n": 1000,
+          "first_10": 0.16,
+          "first_50": 0.25,
+          "highdeg_10": 0.14,
+          "highdeg_50": 0.29,
+          "root": 0.08,
+          "depth_1": 0.16,
+          "depth_2": 0.26,
+          "overall_classified": 0.39
+        },
+        {
+          "alpha": 0.0,
+          "n": 2000,
+          "first_10": 0.12,
+          "first_50": 0.23,
+          "highdeg_10": 0.11,
+          "highdeg_50": 0.26,
+          "root": 0.07,
+          "depth_1": 0.15,
+          "depth_2": 0.25,
+          "overall_classified": 0.41
+        },
+        {
+          "alpha": 0.0,
+          "n": 3000,
+          "first_10": 0.12,
+          "first_50": 0.22,
+          "highdeg_10": 0.11,
+          "highdeg_50": 0.25,
+          "root": 0.05,
+          "depth_1": 0.14,
+          "depth_2": 0.25,
+          "overall_classified": 0.42
+        },
+        {
+          "alpha": 0.0,
+          "n": 4000,
+          "first_10": 0.12,
+          "first_50": 0.21,
+          "highdeg_10": 0.1,
+          "highdeg_50": 0.24,
+          "root": 0.06,
+          "depth_1": 0.15,
+          "depth_2": 0.26,
+          "overall_classified": 0.42
+        },
+        {
+          "alpha": 0.0,
+          "n": 5000,
+          "first_10": 0.11,
+          "first_50": 0.2,
+          "highdeg_10": 0.08,
+          "highdeg_50": 0.23,
+          "root": 0.05,
+          "depth_1": 0.14,
+          "depth_2": 0.25,
+          "overall_classified": 0.43
+        },
+        {
+          "alpha": -0.5,
+          "n": 1000,
+          "first_10": 0.11,
+          "first_50": 0.19,
+          "highdeg_10": 0.08,
+          "highdeg_50": 0.21,
+          "root": 0.07,
+          "depth_1": 0.13,
+          "depth_2": 0.21,
+          "overall_classified": 0.32
+        },
+        {
+          "alpha": -0.5,
+          "n": 2000,
+          "first_10": 0.09,
+          "first_50": 0.16,
+          "highdeg_10": 0.06,
+          "highdeg_50": 0.19,
+          "root": 0.05,
+          "depth_1": 0.13,
+          "depth_2": 0.21,
+          "overall_classified": 0.33
+        },
+        {
+          "alpha": -0.5,
+          "n": 3000,
+          "first_10": 0.08,
+          "first_50": 0.15,
+          "highdeg_10": 0.05,
+          "highdeg_50": 0.17,
+          "root": 0.06,
+          "depth_1": 0.12,
+          "depth_2": 0.21,
+          "overall_classified": 0.34
+        },
+        {
+          "alpha": -0.5,
+          "n": 4000,
+          "first_10": 0.08,
+          "first_50": 0.14,
+          "highdeg_10": 0.05,
+          "highdeg_50": 0.16,
+          "root": 0.04,
+          "depth_1": 0.11,
+          "depth_2": 0.21,
+          "overall_classified": 0.35
+        },
+        {
+          "alpha": -0.5,
+          "n": 5000,
+          "first_10": 0.07,
+          "first_50": 0.13,
+          "highdeg_10": 0.05,
+          "highdeg_50": 0.15,
+          "root": 0.04,
+          "depth_1": 0.1,
+          "depth_2": 0.2,
+          "overall_classified": 0.35
+        }
+      ]
+    },
+    "tab:mean_error_scale_n1 3": {
+      "line": 2411,
+      "rows": [
+        {
+          "alpha": 2.0,
+          "n": 1200,
+          "first_10": 0.43,
+          "first_50": 0.55,
+          "highdeg_10": 0.37,
+          "highdeg_50": 0.52,
+          "root": 0.29,
+          "depth_1": 0.39,
+          "depth_2": 0.51,
+          "overall_classified": 0.61
+        },
+        {
+          "alpha": 2.0,
+          "n": 2400,
+          "first_10": 0.39,
+          "first_50": 0.51,
+          "highdeg_10": 0.33,
+          "highdeg_50": 0.49,
+          "root": 0.26,
+          "depth_1": 0.34,
+          "depth_2": 0.46,
+          "overall_classified": 0.61
+        },
+        {
+          "alpha": 2.0,
+          "n": 3600,
+          "first_10": 0.37,
+          "first_50": 0.49,
+          "highdeg_10": 0.33,
+          "highdeg_50": 0.48,
+          "root": 0.25,
+          "depth_1": 0.32,
+          "depth_2": 0.45,
+          "overall_classified": 0.61
+        },
+        {
+          "alpha": 2.0,
+          "n": 4800,
+          "first_10": 0.35,
+          "first_50": 0.47,
+          "highdeg_10": 0.32,
+          "highdeg_50": 0.47,
+          "root": 0.23,
+          "depth_1": 0.3,
+          "depth_2": 0.44,
+          "overall_classified": 0.61
+        },
+        {
+          "alpha": 2.0,
+          "n": 6000,
+          "first_10": 0.33,
+          "first_50": 0.46,
+          "highdeg_10": 0.3,
+          "highdeg_50": 0.45,
+          "root": 0.23,
+          "depth_1": 0.28,
+          "depth_2": 0.42,
+          "overall_classified": 0.61
+        },
+        {
+          "alpha": 0.0,
+          "n": 1200,
+          "first_10": 0.3,
+          "first_50": 0.43,
+          "highdeg_10": 0.24,
+          "highdeg_50": 0.41,
+          "root": 0.18,
+          "depth_1": 0.26,
+          "depth_2": 0.39,
+          "overall_classified": 0.54
+        },
+        {
+          "alpha": 0.0,
+          "n": 2400,
+          "first_10": 0.25,
+          "first_50": 0.38,
+          "highdeg_10": 0.18,
+          "highdeg_50": 0.35,
+          "root": 0.16,
+          "depth_1": 0.24,
+          "depth_2": 0.36,
+          "overall_classified": 0.54
+        },
+        {
+          "alpha": 0.0,
+          "n": 3600,
+          "first_10": 0.21,
+          "first_50": 0.33,
+          "highdeg_10": 0.16,
+          "highdeg_50": 0.3,
+          "root": 0.11,
+          "depth_1": 0.21,
+          "depth_2": 0.33,
+          "overall_classified": 0.53
+        },
+        {
+          "alpha": 0.0,
+          "n": 4800,
+          "first_10": 0.19,
+          "first_50": 0.31,
+          "highdeg_10": 0.14,
+          "highdeg_50": 0.27,
+          "root": 0.12,
+          "depth_1": 0.19,
+          "depth_2": 0.33,
+          "overall_classified": 0.53
+        },
+        {
+          "alpha": 0.0,
+          "n": 6000,
+          "first_10": 0.18,
+          "first_50": 0.29,
+          "highdeg_10": 0.14,
+          "highdeg_50": 0.26,
+          "root": 0.1,
+          "depth_1": 0.19,
+          "depth_2": 0.31,
+          "overall_classified": 0.53
+        },
+        {
+          "alpha": -0.5,
+          "n": 1200,
+          "first_10": 0.21,
+          "first_50": 0.32,
+          "highdeg_10": 0.13,
+          "highdeg_50": 0.31,
+          "root": 0.13,
+          "depth_1": 0.2,
+          "depth_2": 0.32,
+          "overall_classified": 0.44
+        },
+        {
+          "alpha": -0.5,
+          "n": 2400,
+          "first_10": 0.19,
+          "first_50": 0.27,
+          "highdeg_10": 0.12,
+          "highdeg_50": 0.25,
+          "root": 0.1,
+          "depth_1": 0.19,
+          "depth_2": 0.3,
+          "overall_classified": 0.44
+        },
+        {
+          "alpha": -0.5,
+          "n": 3600,
+          "first_10": 0.15,
+          "first_50": 0.23,
+          "highdeg_10": 0.09,
+          "highdeg_50": 0.19,
+          "root": 0.09,
+          "depth_1": 0.16,
+          "depth_2": 0.27,
+          "overall_classified": 0.43
+        },
+        {
+          "alpha": -0.5,
+          "n": 4800,
+          "first_10": 0.11,
+          "first_50": 0.18,
+          "highdeg_10": 0.08,
+          "highdeg_50": 0.16,
+          "root": 0.05,
+          "depth_1": 0.11,
+          "depth_2": 0.24,
+          "overall_classified": 0.42
+        },
+        {
+          "alpha": -0.5,
+          "n": 6000,
+          "first_10": 0.09,
+          "first_50": 0.16,
+          "highdeg_10": 0.08,
+          "highdeg_50": 0.14,
+          "root": 0.05,
+          "depth_1": 0.09,
+          "depth_2": 0.22,
+          "overall_classified": 0.42
+        }
+      ]
+    },
+    "tab:mean_error_scale_n34 3": {
+      "line": 2466,
+      "rows": [
+        {
+          "alpha": 2.0,
+          "n": 1200,
+          "first_10": 0.43,
+          "first_50": 0.54,
+          "highdeg_10": 0.38,
+          "highdeg_50": 0.52,
+          "root": 0.27,
+          "depth_1": 0.38,
+          "depth_2": 0.5,
+          "overall_classified": 0.61
+        },
+        {
+          "alpha": 2.0,
+          "n": 2400,
+          "first_10": 0.4,
+          "first_50": 0.52,
+          "highdeg_10": 0.36,
+          "highdeg_50": 0.51,
+          "root": 0.26,
+          "depth_1": 0.35,
+          "depth_2": 0.49,
+          "overall_classified": 0.62
+        },
+        {
+          "alpha": 2.0,
+          "n": 3600,
+          "first_10": 0.39,
+          "first_50": 0.52,
+          "highdeg_10": 0.36,
+          "highdeg_50": 0.51,
+          "root": 0.28,
+          "depth_1": 0.34,
+          "depth_2": 0.48,
+          "overall_classified": 0.62
+        },
+        {
+          "alpha": 2.0,
+          "n": 4800,
+          "first_10": 0.39,
+          "first_50": 0.51,
+          "highdeg_10": 0.33,
+          "highdeg_50": 0.5,
+          "root": 0.24,
+          "depth_1": 0.35,
+          "depth_2": 0.48,
+          "overall_classified": 0.63
+        },
+        {
+          "alpha": 2.0,
+          "n": 6000,
+          "first_10": 0.38,
+          "first_50": 0.5,
+          "highdeg_10": 0.34,
+          "highdeg_50": 0.5,
+          "root": 0.22,
+          "depth_1": 0.32,
+          "depth_2": 0.47,
+          "overall_classified": 0.63
+        },
+        {
+          "alpha": 0.0,
+          "n": 1200,
+          "first_10": 0.31,
+          "first_50": 0.43,
+          "highdeg_10": 0.25,
+          "highdeg_50": 0.42,
+          "root": 0.19,
+          "depth_1": 0.27,
+          "depth_2": 0.39,
+          "overall_classified": 0.54
+        },
+        {
+          "alpha": 0.0,
+          "n": 2400,
+          "first_10": 0.27,
+          "first_50": 0.39,
+          "highdeg_10": 0.2,
+          "highdeg_50": 0.37,
+          "root": 0.18,
+          "depth_1": 0.23,
+          "depth_2": 0.37,
+          "overall_classified": 0.54
+        },
+        {
+          "alpha": 0.0,
+          "n": 3600,
+          "first_10": 0.25,
+          "first_50": 0.37,
+          "highdeg_10": 0.2,
+          "highdeg_50": 0.35,
+          "root": 0.16,
+          "depth_1": 0.23,
+          "depth_2": 0.37,
+          "overall_classified": 0.56
+        },
+        {
+          "alpha": 0.0,
+          "n": 4800,
+          "first_10": 0.24,
+          "first_50": 0.35,
+          "highdeg_10": 0.17,
+          "highdeg_50": 0.32,
+          "root": 0.15,
+          "depth_1": 0.23,
+          "depth_2": 0.36,
+          "overall_classified": 0.56
+        },
+        {
+          "alpha": 0.0,
+          "n": 6000,
+          "first_10": 0.23,
+          "first_50": 0.34,
+          "highdeg_10": 0.16,
+          "highdeg_50": 0.31,
+          "root": 0.14,
+          "depth_1": 0.23,
+          "depth_2": 0.36,
+          "overall_classified": 0.56
+        },
+        {
+          "alpha": -0.5,
+          "n": 1200,
+          "first_10": 0.22,
+          "first_50": 0.33,
+          "highdeg_10": 0.15,
+          "highdeg_50": 0.32,
+          "root": 0.13,
+          "depth_1": 0.21,
+          "depth_2": 0.33,
+          "overall_classified": 0.45
+        },
+        {
+          "alpha": -0.5,
+          "n": 2400,
+          "first_10": 0.19,
+          "first_50": 0.29,
+          "highdeg_10": 0.12,
+          "highdeg_50": 0.26,
+          "root": 0.11,
+          "depth_1": 0.19,
+          "depth_2": 0.31,
+          "overall_classified": 0.45
+        },
+        {
+          "alpha": -0.5,
+          "n": 3600,
+          "first_10": 0.16,
+          "first_50": 0.26,
+          "highdeg_10": 0.1,
+          "highdeg_50": 0.22,
+          "root": 0.1,
+          "depth_1": 0.19,
+          "depth_2": 0.3,
+          "overall_classified": 0.45
+        },
+        {
+          "alpha": -0.5,
+          "n": 4800,
+          "first_10": 0.16,
+          "first_50": 0.24,
+          "highdeg_10": 0.1,
+          "highdeg_50": 0.2,
+          "root": 0.09,
+          "depth_1": 0.17,
+          "depth_2": 0.29,
+          "overall_classified": 0.45
+        },
+        {
+          "alpha": -0.5,
+          "n": 6000,
+          "first_10": 0.12,
+          "first_50": 0.2,
+          "highdeg_10": 0.09,
+          "highdeg_50": 0.18,
+          "root": 0.06,
+          "depth_1": 0.14,
+          "depth_2": 0.27,
+          "overall_classified": 0.45
+        }
+      ]
+    },
+    "tab:mean_error_scale_n12 3": {
+      "line": 2520,
+      "rows": [
+        {
+          "alpha": 2.0,
+          "n": 1200,
+          "first_10": 0.42,
+          "first_50": 0.54,
+          "highdeg_10": 0.37,
+          "highdeg_50": 0.51,
+          "root": 0.28,
+          "depth_1": 0.38,
+          "depth_2": 0.49,
+          "overall_classified": 0.61
+        },
+        {
+          "alpha": 2.0,
+          "n": 2400,
+          "first_10": 0.42,
+          "first_50": 0.54,
+          "highdeg_10": 0.35,
+          "highdeg_50": 0.52,
+          "root": 0.28,
+          "depth_1": 0.36,
+          "depth_2": 0.49,
+          "overall_classified": 0.62
+        },
+        {
+          "alpha": 2.0,
+          "n": 3600,
+          "first_10": 0.41,
+          "first_50": 0.54,
+          "highdeg_10": 0.37,
+          "highdeg_50": 0.53,
+          "root": 0.29,
+          "depth_1": 0.38,
+          "depth_2": 0.51,
+          "overall_classified": 0.63
+        },
+        {
+          "alpha": 2.0,
+          "n": 4800,
+          "first_10": 0.42,
+          "first_50": 0.54,
+          "highdeg_10": 0.38,
+          "highdeg_50": 0.53,
+          "root": 0.27,
+          "depth_1": 0.37,
+          "depth_2": 0.51,
+          "overall_classified": 0.63
+        },
+        {
+          "alpha": 2.0,
+          "n": 6000,
+          "first_10": 0.42,
+          "first_50": 0.53,
+          "highdeg_10": 0.38,
+          "highdeg_50": 0.53,
+          "root": 0.27,
+          "depth_1": 0.36,
+          "depth_2": 0.51,
+          "overall_classified": 0.64
+        },
+        {
+          "alpha": 0.0,
+          "n": 1200,
+          "first_10": 0.3,
+          "first_50": 0.43,
+          "highdeg_10": 0.23,
+          "highdeg_50": 0.41,
+          "root": 0.19,
+          "depth_1": 0.26,
+          "depth_2": 0.38,
+          "overall_classified": 0.54
+        },
+        {
+          "alpha": 0.0,
+          "n": 2400,
+          "first_10": 0.29,
+          "first_50": 0.41,
+          "highdeg_10": 0.23,
+          "highdeg_50": 0.4,
+          "root": 0.18,
+          "depth_1": 0.26,
+          "depth_2": 0.39,
+          "overall_classified": 0.56
+        },
+        {
+          "alpha": 0.0,
+          "n": 3600,
+          "first_10": 0.26,
+          "first_50": 0.39,
+          "highdeg_10": 0.19,
+          "highdeg_50": 0.36,
+          "root": 0.17,
+          "depth_1": 0.24,
+          "depth_2": 0.38,
+          "overall_classified": 0.56
+        },
+        {
+          "alpha": 0.0,
+          "n": 4800,
+          "first_10": 0.26,
+          "first_50": 0.38,
+          "highdeg_10": 0.2,
+          "highdeg_50": 0.37,
+          "root": 0.16,
+          "depth_1": 0.26,
+          "depth_2": 0.4,
+          "overall_classified": 0.58
+        },
+        {
+          "alpha": 0.0,
+          "n": 6000,
+          "first_10": 0.26,
+          "first_50": 0.37,
+          "highdeg_10": 0.18,
+          "highdeg_50": 0.34,
+          "root": 0.16,
+          "depth_1": 0.24,
+          "depth_2": 0.38,
+          "overall_classified": 0.58
+        },
+        {
+          "alpha": -0.5,
+          "n": 1200,
+          "first_10": 0.21,
+          "first_50": 0.32,
+          "highdeg_10": 0.15,
+          "highdeg_50": 0.31,
+          "root": 0.12,
+          "depth_1": 0.2,
+          "depth_2": 0.32,
+          "overall_classified": 0.44
+        },
+        {
+          "alpha": -0.5,
+          "n": 2400,
+          "first_10": 0.2,
+          "first_50": 0.3,
+          "highdeg_10": 0.12,
+          "highdeg_50": 0.29,
+          "root": 0.11,
+          "depth_1": 0.2,
+          "depth_2": 0.33,
+          "overall_classified": 0.46
+        },
+        {
+          "alpha": -0.5,
+          "n": 3600,
+          "first_10": 0.19,
+          "first_50": 0.29,
+          "highdeg_10": 0.13,
+          "highdeg_50": 0.25,
+          "root": 0.1,
+          "depth_1": 0.2,
+          "depth_2": 0.33,
+          "overall_classified": 0.48
+        },
+        {
+          "alpha": -0.5,
+          "n": 4800,
+          "first_10": 0.18,
+          "first_50": 0.28,
+          "highdeg_10": 0.12,
+          "highdeg_50": 0.24,
+          "root": 0.11,
+          "depth_1": 0.2,
+          "depth_2": 0.33,
+          "overall_classified": 0.48
+        },
+        {
+          "alpha": -0.5,
+          "n": 6000,
+          "first_10": 0.17,
+          "first_50": 0.26,
+          "highdeg_10": 0.1,
+          "highdeg_50": 0.22,
+          "root": 0.08,
+          "depth_1": 0.19,
+          "depth_2": 0.32,
+          "overall_classified": 0.48
+        }
+      ]
+    }
+  },
+  "numerical_claims": {
+    "toy": {
+      "nodes": 23,
+      "tree_sizes": [
+        13,
+        10
+      ],
+      "noise_edges": 9,
+      "between_noise_edges": 4,
+      "tau": 5,
+      "Q": 3,
+      "mc_samples": 500,
+      "mc_alpha": 0,
+      "mc_K": 2,
+      "accepted_samples": 319
+    },
+    "coauthor": {
+      "nodes": 2263,
+      "edges": 4388,
+      "alpha": 0,
+      "K": 2,
+      "degree_rank": 10,
+      "initial_Q": 226,
+      "mc_samples": 1000,
+      "accepted_samples": 842,
+      "agreement": 0.981
+    },
+    "hierarchy": {
+      "K_per_split": 2,
+      "degree_rank": 10,
+      "Q": 10,
+      "terminal_clusters": 20
+    }
+  }
+}

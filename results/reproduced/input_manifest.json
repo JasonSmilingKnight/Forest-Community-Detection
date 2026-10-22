@@ -1,0 +1,98 @@
+[
+  {
+    "scenario": "balanced",
+    "alpha": 2,
+    "phase": "distance",
+    "source": "results/amarel/rerun_20261015/balanced_alpha2_distance.csv",
+    "status": "completed rerun",
+    "sha256": "f4ebbc15ff20a2726e693763d40e9a951463683f435a04c33f75503b3cb2b62f"
+  },
+  {
+    "scenario": "balanced",
+    "alpha": 2,
+    "phase": "benchmarks",
+    "source": "results/amarel/rerun_20261015/balanced_alpha2_benchmarks.csv",
+    "status": "completed rerun",
+    "sha256": "86c73f5fc0a37b11eb3a4c33b47d8d4b10857235aa0190816bb3278b6d7f4755"
+  },
+  {
+    "scenario": "balanced",
+    "alpha": 2,
+    "phase": "montecarlo",
+    "source": "results/amarel/rerun_20261015/balanced_alpha2_montecarlo.csv",
+    "status": "completed rerun",
+    "sha256": "4e44c3d7a49bcce78f03a5534c35eb16ba3a1ced2bbf5ea5bdafac0b5067a074"
+  },
+  {
+    "scenario": "balanced",
+    "alpha": 0,
+    "phase": "distance",
+    "source": "results/amarel/rerun_20261015/balanced_alpha0_distance.csv",
+    "status": "completed rerun",
+    "sha256": "ddd9fbf53e7098f5a96cfb0d137fef8c7981b54b93167f86961f87df71655c78"
+  },
+  {
+    "scenario": "balanced",
+    "alpha": 0,
+    "phase": "benchmarks",
+    "source": "results/amarel/rerun_20261015/balanced_alpha0_benchmarks.csv",
+    "status": "completed rerun",
+    "sha256": "66d709dc6c37ab96b80df08089c599fa71294ed1f598ffefc47deab5aec8b27e"
+  },
+  {
+    "scenario": "balanced",
+    "alpha": 0,
+    "phase": "montecarlo",
+    "source": "results/amarel/rerun_20261015/balanced_alpha0_montecarlo.csv",
+    "status": "completed rerun",
+    "sha256": "a4058acce9b9b26c2e14822e88563cefa4dd849139c575d2503d02a658556a3c"
+  },
+  {
+    "scenario": "balanced",
+    "alpha": -0.5,
+    "phase": "distance",
+    "source": "results/amarel/rerun_20261015/balanced_alpha-0.5_distance.csv",
+    "status": "completed rerun",
+    "sha256": "5ceb08bc3d1ed778aeb9fbafd73c7c51128163ee004c6717fcaf38067d147d04"
+  },
+  {
+    "scenario": "balanced",
+    "alpha": -0.5,
+    "phase": "benchmarks",
+    "source": "results/amarel/rerun_20261015/balanced_alpha-0.5_benchmarks.csv",
+    "status": "completed rerun",
+    "sha256": "c93e14b4fe017d51568151fe78856c7fd5e9ece2016f20efdefdbb6c1b029d96"
+  },
+  {
+    "scenario": "balanced",
+    "alpha": -0.5,
+    "phase": "montecarlo",
+    "source": "results/amarel/rerun_20261015/balanced_alpha-0.5_montecarlo.csv",
+    "status": "completed rerun",
+    "sha256": "508c14dc716efb9441f2d463ebe210ea887544cf400a5bc4c4734a98e0bb997d"
+  },
+  {
+    "scenario": "unbalanced",
+    "alpha": 2,
+    "phase": "distance",
+    "source": "results/amarel/rerun_20261015/unbalanced_alpha2_distance.csv",
+    "status": "completed rerun",
+    "sha256": "b84928df5fc37db4929c15da71b23b4ee022a383f9281adda9860ffd95e307fe"
+  },
+  {
+    "scenario": "unbalanced",
+    "alpha": 0,
+    "phase": "distance",
+    "source": "results/amarel/rerun_20261015/unbalanced_alpha0_distance.csv",
+    "status": "completed rerun",
+    "sha256": "b06e5e88cb4dba9938eebcad97011bf8f0f6dd62855f542725b44babe6bf852f"
+  },
+  {
+    "scenario": "unbalanced",
+    "alpha": -0.5,
+    "phase": "distance",
+    "source": "results/amarel/rerun_20261015/unbalanced_alpha-0.5_distance.csv",
+    "status": "completed rerun",
+    "sha256": "06e768245ad7a739a9dfe72083194f9b3d453761e5132af94c58fe648f1cd5b6"
+  }
+]
